@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+  <form method="" action=""> 
+  	<label>First name</label>
+  	<br>
+  	<input type="text" name="fname">
+  	<br>
+  	<label>Last name</label>
+  	<br>
+  	<input type="text" name="lname">
+  	<br>
+  	<input type="submit" name="submit">
+
+  </form>
+</body>
+</html>
+<?php
+  if (issent($_POST['submit'])) {
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+
+    //echo $fname." ".$lname;
+
+
+   class Person {
+   	private $fname;
+    private $lname;
+
+    public function __construct($fname, $lname){
+
+    $this -> Firstname = $fname;
+    $this -> Lastname = $lname;
+    }
+
+    public function getFname(){
+    	return $this->firstname;
+    }
+     public function getLname(){
+    	return $this->laststname;
+    }
+     public function fullName(){
+    	return $this->firstname;
+    	encho "Hi, ".$this->firstname." ".$this->lastname;
+    }
+   }
+ 
+  $person1 = new Person($fname,$lname);
+  $person1 -> fullName();
+
+
+  }
+
+  ?>
