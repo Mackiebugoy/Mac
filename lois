@@ -41,7 +41,7 @@
     			return $this ->lastname;
     		}
     		public function fullname(){
-    			echo "Fuck you, ".$this->firstname. " ".$this->lastname;
+    			echo "Hi, ".$this->firstname. " ".$this->lastname;
     		}
     	}
 
