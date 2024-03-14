@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+void getStudentAges() {
+    int a;
+    
+    printf("Enter the number of students: ");
+    scanf("%d", &a);
+    
+    int age[a];
+    
+    for(int i = 0; i < a; i++) {
+        printf("Enter age for Student %d: ", i + 1);
+        scanf("%d", &age[i]);
+    }
+    
+    printf("Age of students: \n");
+    for(int i = 0; i < a; i++) {
+        printf("Student %d: %d\n", i + 1, age[i]);
+    }
+}
+
+int main() {
+    getStudentAges();
+    return 0;   
+}
